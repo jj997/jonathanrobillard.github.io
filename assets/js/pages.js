@@ -7,10 +7,10 @@
 (function($) {
 
 	var $window = $(window),
-		$body = $('body'),
-		$header = $('#header'),
+		$body = $('#page1'),
+		$header = $('#project_page'),
 		$footer = $('#footer'),
-		$main = $('#main'),
+		$main = $('#project_div'),
 		settings = {
 
 			// Parallax background effect?
@@ -73,19 +73,19 @@
 				breakpoints.on('<=medium', function() {
 
 					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
+					$header.css('background-position', 'center top');
 
 				});
 
 				breakpoints.on('>medium', function() {
-
-					$header.css('background-position', 'left 0px');
+				$header.css('background-position', 'center top');
 
 					$window.on('scroll.strata_parallax', function() {
-						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+						$header.css('background-position', 'center top');
 					});
 
 				});
+
 
 				$window.on('load', function() {
 					$window.triggerHandler('scroll');
