@@ -1,32 +1,18 @@
 body
-{
-	margin: 0 auto;
-}
-	.container{
-		max-width: 960px;
+	{
 		margin: 0 auto;
-		background: #f9f9f9;
-		font-size: 24px;
-		padding: 25px;
 	}
+		.container{
+			max-width: 960px;
+			margin: 0 auto;
+			background: #f9f9f9;
+			padding: 25px;
+		}
+	
+		.parallax {
+			height: 300vh;
+			background: transparent;
+		}
+	
+	
 
-	.parallax {
-		height: 500px;
-		background: transparent;
-	}
-
-
-
-
-
-	/*
-	#project_page
-	{
-		display: flex;
-		justify-content: center;
-		background-image: url("/images/bg.jpg");
-	}
-	.inner
-	{
-		text-align: center;
-	}*/

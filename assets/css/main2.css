@@ -1,0 +1,139 @@
+html, body, div, span, applet, 
+object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd,
+q, s, samp, small, strike, strong, 
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@media screen{
+    
+}
+
+
+
+
+html { 
+    background: url("../images/space.jpg") no-repeat center center fixed; 
+/*background: rgb(209,0,92)  ;
+background: linear-gradient(90deg, rgba(209,0,92,1) 17%, rgba(61,9,121,1) 52%, rgba(0,168,255,1) 96%) no-repeat center center fixed;*/
+
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+  }
+
+
+body{
+    background-color:transparent;
+    position: absolute;
+    margin: 0px;
+    top:0;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.pageTitle{
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    position: relative;
+    width: 100%;
+    top:13vh;
+    text-align: center;
+font-size: 3.5vw;
+}
+#poste{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+}
+
+.navWrapper{
+    position: relative;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 1.5vw;
+    height: 1vh;
+    width: 100%;
+}
+
+#accueilHeader{
+    position: relative;
+    height: 1px;
+    border-right:solid 1px #fff;/*add */
+}
+
+a:link, a:visited{
+    display: inline-block;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+}
+
+
+main{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top:25vh;
+    width:100%;
+}
+.divText{
+    margin-top: 7vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom:  15vh;
+}
+
+.contentH2 {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-bottom: 4vh;
+    padding-top: 5vh;
+    font-size: 2vw;
+
+}
+
+.gridDiv2{
+    display: grid;
+    margin-top: 10vh;
+    grid-template-columns: repeat(auto-fit,  minmax(186px, 1fr));
+    gap: 2vw;
+    justify-items: center;
+    align-items: center;
+}
+
+#content2{
+    width: 100px;
+    height: 60px;
+    border: 2px dashed rgb(0, 0, 0,0.5)
+}
+
+.footerDiv{
+position: relative;
+text-align: center;
+top: 0;
+bottom: 0;
+width: 100%;
+height: 7vh;
+background-color: black;
+}
+footer{
+    padding-top: 2vh;
+    color:white;
+}
