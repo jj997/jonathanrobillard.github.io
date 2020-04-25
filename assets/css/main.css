@@ -130,16 +130,15 @@ section, summary, time, mark, audio, video {
 
     #emailWrapper{
         font-family: 'Roboto',sans-serif;
-        color: white;
         position: relative;
+        color: white;
         font-size: 3vw;
         width: 100%;
+        right: 4%;
         top: 20vh;
-        right: 2%;
-        display: flex;
-        justify-content: right;
+        display:flex;
+        justify-content: flex-end;
     }
-    
     
     main{
         background-color: #fff;
@@ -399,7 +398,7 @@ section, summary, time, mark, audio, video {
 
         #emailWrapper{
             top:35vh;
-            font-size: 1.5vw;;
+            font-size: 1.5vw;
         }
 
         main{
