@@ -127,6 +127,18 @@ section, summary, time, mark, audio, video {
         padding-right: 1vw;
     
     }
+
+    #emailWrapper{
+        font-family: 'Roboto',sans-serif;
+        color: white;
+        position: relative;
+        font-size: 3vw;
+        width: 100%;
+        top: 20vh;
+        right: 2%;
+        display: flex;
+        justify-content: right;
+    }
     
     
     main{
@@ -253,6 +265,9 @@ section, summary, time, mark, audio, video {
             padding-right: 1vw;
         
         }
+        #emailWrapper{
+            font-size: 2vw;;
+        }
         
 
         .divText{
@@ -302,7 +317,10 @@ section, summary, time, mark, audio, video {
         }
 
         #navWrapperDesktop {
-            height: 1px;
+            display: flex;
+            width: 100%;
+            justify-self: center;
+            justify-content: center;
             padding: 0;
             margin:0;
             font-size: 1vw;
@@ -316,6 +334,7 @@ section, summary, time, mark, audio, video {
 
         
         a:link, a:visited{
+
             display: inline-block;
             color: white;
             font-family: 'Roboto', sans-serif;
@@ -323,6 +342,64 @@ section, summary, time, mark, audio, video {
             padding-left: 1vw;
             padding-right: .7vw;
         
+        }
+
+/* ##############################################################*/
+/* ############## Begin drop down menu ###########################*/
+/* ##############################################################*/
+
+#accueilHeaderDT{border: none;}
+
+#accueilHeaderDT2 p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-left: solid 2px white ;
+}
+
+        .allProjectsContent{
+            font-family: 'Roboto',sans-serif;
+            font-size: 15px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 3;
+        }
+          
+          
+          .allProjectsContent a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          #accueilHeaderDT2:hover .allProjectsContent {
+            display: block;
+          }
+          
+          .allProjectsContent a:hover {background-color: rgb(151, 210, 228);}
+          
+          
+          #accueilHeaderDT2:hover p{
+            background-color:rgb(230, 98, 57);
+          }
+
+    
+/* ##############################################################*/
+/* ############## End drop down menu ###########################*/
+/* ##############################################################*/
+
+
+
+
+
+        #emailWrapper{
+            top:35vh;
+            font-size: 1.5vw;;
         }
 
         main{
