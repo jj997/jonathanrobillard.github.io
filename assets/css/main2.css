@@ -1,10 +1,26 @@
-
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;}
+    
 /* this should be the styling from 0-600px*/
 
     html { 
-    background: rgb(209,0,92)  ;
-    background: linear-gradient(90deg, rgba(209,0,92,1) 17%, rgba(61,9,121,1) 52%, rgba(0,168,255,1) 96%) no-repeat center center fixed;
-    
+        background: rgb(13,191,252);
+        background: linear-gradient(180deg, rgba(13,191,252,1) 0%, rgba(238,187,55,1) 29%, rgba(253,45,45,1) 56%) no-repeat center center fixed;
     -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -16,14 +32,15 @@
     body{
         background-color:transparent;
         position: absolute;
+        padding-top: 0px;
         margin: 0px;
         top:0;
         width: 100%;
-        font-size: 16px;
+        font-size: 20vw;
     }
     
     
-    .pageTitle{
+    #pageTitle{
         font-family: 'Lobster', sans-serif;
         color: white;
         position: relative;
@@ -34,20 +51,27 @@
     }
     #poste{
         font-family: 'Roboto', sans-serif;
+        position: relative;
+        margin-top: 0; 
         font-size: 5vw;
     }
     
-    .navWrapper{
-        position: relative;
+    #navWrapperMobile{
+        position: absolute;
         text-align: center;
-        top: 6vh;
-        margin-top: 3vh;
+        margin-top: 0;
+        padding-top: 0;
+        top: 2vh;
         font-size: 4vw;
         height: 1vh;
         width: 100%;
     }
+
+    #navWrapperDesktop {
+        display: none;
+    }
     
-    #accueilHeader{
+    .accueilHeader{
         position: relative;
         height: 1px;
         border-right:solid 1px #fff;/*add */
@@ -57,7 +81,7 @@
         display: inline-block;
         color: white;
         font-family: 'Roboto', sans-serif;
-        font-size: 5vw;
+        font-size: 4vw;
         padding-left: 1.5vw;
         padding-right: 1vw;
     
@@ -76,6 +100,7 @@
         margin-left: 1.5vw;
         margin-right: 1.5vw;
         margin-bottom:  15vh;
+        font-size: 4.5vw;
     }
     
     .contentH2 {
@@ -83,7 +108,6 @@
         position: relative;
         margin-bottom: 4vh;
         padding-top: 5vh;
-        font-size: 4.5vw;
     
     }
     
@@ -95,7 +119,7 @@
         justify-items: center;
         align-items: center;
     }
-    
+
     #content2{
         width: 100px;
         height: 60px;
@@ -118,16 +142,72 @@
     
 
     @media screen and (min-width: 600px) {
-        body {
-            background-color:orange;
+        html{background: rgb(13,191,252);
+            background: linear-gradient(180deg, rgba(13,191,252,1) 0%, rgba(238,187,55,1) 29%, rgba(253,45,45,1) 56%) no-repeat center center fixed;  
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+            body {
+            background-color: transparent;
+            font-size: 16px;
+        }
+
+        #navWrapperMobile{
+        display: none;
+        }
+
+        #navWrapperDesktop{
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            top: 6vh;
+            margin-top: 3vh;
+            font-size: 2vw;
+            height: 1vh;
+            width: 100%;
+        }
+
+        #accueilHeaderDT{
+            position: relative;
+            height: 1px;
+            border-right:solid 1px #fff;/*add */
+        }
+
+        a:link, a:visited{
+            display: inline-block;
+            color: white;
+            font-family: 'Roboto', sans-serif;
             font-size: 25px;
+            padding-left: 1.5vw;
+            padding-right: 1vw;
+        
+        }
+        
+
+        .divText{
+            margin-top: 7vh;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            margin-bottom:  15vh;
+        }
+        
+        .contentH2 {
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            margin-bottom: 4vh;
+            padding-top: 5vh;
+            font-size: 4vw;
+        
         }
     }
     
 
-    @media screen and (min-width: 860px) {
+    @media screen and (min-width: 1200px) {
         html{
-        background: url("../../images/space.jpg") no-repeat center center fixed; 
+            background: rgb(13,191,252);
+            background: linear-gradient(180deg, rgba(13,191,252,1) 0%, rgba(238,187,55,1) 29%, rgba(253,45,45,1) 56%) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -137,56 +217,55 @@
             background-color:transparent;
             font-size: 25px;
         }
-        .pageTitle{
+        #pageTitle{
             font-family: 'Lobster', sans-serif;
             color: white;
             position: relative;
             width: 100%;
             top:13vh;
             text-align: center;
-            font-size: 4.5vw;
+            font-size: 5vw;
         }
         #poste{
             font-family: 'Roboto', sans-serif;
             font-size: 3vw;
         }
-        .navWrapper{
-            position: relative;
-            text-align: center;
-            margin-top: 3vh;
-            font-size: 1.5vw;
-            height: 1vh;
-            width: 100%;
+
+        #navWrapperDesktop {
+            height: 1px;
+            padding: 0;
+            margin:0;
+        }
+
+        #navWrapperMobile{
+            display: none;
         }
         
-        #accueilHeader{
-            position: relative;
-            height: 1px;
-            border-right:solid 1px #fff;/*add */
-        }
+
         
         a:link, a:visited{
             display: inline-block;
             color: white;
             font-family: 'Roboto', sans-serif;
-            font-size: 1.5vw;
+            font-size: 25px;
             padding-left: 1vw;
-            padding-right: 1vw;
+            padding-right: .7vw;
         
         }
         .divText{
             margin-top: 7vh;
-            margin-left: 20vw;
-            margin-right: 20vw;
+            margin-left: 15vw;
+            margin-right: 15vw;
             margin-bottom:  15vh;
+            font-size: 1.5vw;
         }
         
         .contentH2 {
             font-family: 'Roboto', sans-serif;
             position: relative;
             margin-bottom: 4vh;
-            padding-top: 5vh;
-            font-size: 2vw;
+            padding-top: 10vh;
+            font-size: 3vw;
         
         }
     }
