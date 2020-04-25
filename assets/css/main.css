@@ -188,7 +188,9 @@ section, summary, time, mark, audio, video {
 
     .footerDiv{
     position: relative;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -198,10 +200,13 @@ section, summary, time, mark, audio, video {
     footer{
         display: inline-block;
         position: absolute;
-        top: 50%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
         font-size: 12px;
-        padding-left: 10px;
         color:white;
+
     }
     
 
