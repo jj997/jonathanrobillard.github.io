@@ -165,18 +165,27 @@ section, summary, time, mark, audio, video {
         display: grid;
         margin-top: 10vh;
         grid-template-columns: repeat(auto-fill,  minmax(250px,1fr));
+        gap:1em;
         justify-items: center;
         align-items: center;
     }
     
     #content2{
         background: white;
-        border: solid gray 1px;
         text-align: center;
-        width: 250px;
+        width: 170px;
         padding:25% 0 ;
-
     }
+
+    .borderGDiv{
+        max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0,202,255,1) 0%, rgba(255,115,0,1) 100%);
+  padding: 3px;
+    }
+
+
     .footerDiv{
     position: relative;
     text-align: left;
@@ -255,8 +264,8 @@ section, summary, time, mark, audio, video {
             margin-bottom: 4vh;
             padding-top: 5vh;
             font-size: 4vw;
-        
         }
+    
     }
     
 
