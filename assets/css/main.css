@@ -131,10 +131,10 @@ body {
 #allProjectsContent{
     display: none;
     text-align: left;
-    background-color: rgb(27, 140, 168);
+    background-color: rgba(13, 191, 252, 1);
     opacity : 0.97; 
     height: 100%;
-    width: 30%;
+    width: 45%;
     position: fixed;
     right: 0;
     top: 0%;
@@ -172,10 +172,28 @@ z-index: 3;
 
 #projectsSubMenu {
     display: none;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+}
+#projectsSubMenu a{
+display: inline-flex;
+font-size: 14px;
+padding-left: 10px;
 }
 
-#projectsSubMenu a:hover #projectsSubMenu {
-    display: block;
+#projectsSubMenu strong{
+    padding-right: 5px;
+    padding-left: 5px;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+
+}
+
+#projectsSubMenu span {
+    padding-left: 5px;
+    border-left:solid 1px white;
+    border-bottom: solid 1px white;
 }
 
 #accueilHdrMobile {
@@ -251,13 +269,6 @@ main {
     padding: 25% 0;
 }
 
-.borderGDiv {
-    max-width: 250px;
-    padding: 1rem;
-    position: relative;
-    background: linear-gradient(180deg, rgba(0, 202, 255, 1) 0%, rgba(255, 115, 0, 1) 100%);
-    padding: 3px;
-}
 
 .footerDiv {
     position: relative;

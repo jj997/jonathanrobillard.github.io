@@ -1,5 +1,8 @@
 var hamburger = document.querySelector(".hamburger");
-var menuMobile = document.querySelector("#allProjectsContent")
+var menuMobile = document.querySelector("#allProjectsContent");
+var projSMenu = document.querySelector("#projSpan");
+var pSMenuContent = document.querySelector("#projectsSubMenu");
+var plusDeContenu = document.querySelector("#projSpan strong");
 
 // On click
 hamburger.addEventListener("click", function() {
@@ -13,6 +16,18 @@ hamburger.addEventListener("click", function() {
   else
   {
     menuMobile.style.display="none";
+  } 
+});
+
+projSMenu.addEventListener("click", function(){
+  if(pSMenuContent.style.display==="none"){
+    pSMenuContent.style.display="flex";
+    plusDeContenu.textContent = "-";
   }
-  
+    else
+    {
+    pSMenuContent.style.display="none";
+    plusDeContenu.textContent = "+";
+    }
+
 });
