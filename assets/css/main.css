@@ -115,17 +115,67 @@ body {
 }
 
 #navWrapperMobile {
+    background:transparent;
     position: fixed;
     text-align: right;
     z-index: 2;
     top: 3vh;
     font-size: 4vw;
-    height: .5vh;
     width: 100%;
 }
 
 #navWrapperDesktop {
     display: none;
+}
+
+#allProjectsContent{
+    display: none;
+    text-align: left;
+    background-color: rgb(27, 140, 168);
+    opacity : 0.97; 
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    z-index: -1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menuPlaceholder{
+display: block;
+background-color:transparent;
+position:relative;
+height: 15%;
+z-index: 3;
+}
+
+#allProjectsContent a,#allProjectsContent a div, #allProjectsContent a span {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+#homeLink{
+    border-top: solid 1px white;
+}
+
+#projSpan{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    color: white;
+}
+
+#projectsSubMenu {
+    display: none;
+}
+
+#projectsSubMenu a:hover #projectsSubMenu {
+    display: block;
 }
 
 #accueilHdrMobile {
@@ -141,6 +191,7 @@ a:link, a:visited {
     font-size: 4vw;
     padding-left: 1.5vw;
     padding-right: 1vw;
+    text-decoration: none;
 }
 
 #emailWrapper {
