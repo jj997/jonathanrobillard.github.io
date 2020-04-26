@@ -134,7 +134,7 @@ body {
     background-color: rgba(13, 191, 252, 1);
     opacity : 0.97; 
     height: 100%;
-    width: 45%;
+    width: 50%;
     position: fixed;
     right: 0;
     top: 0%;
@@ -155,6 +155,7 @@ z-index: 3;
     position: relative;
     top: 0;
     width: 100%;
+    font-size: 4vw;
 }
 
 #homeLink{
@@ -163,12 +164,17 @@ z-index: 3;
 
 #projSpan{
     display: flex;
-    justify-content: space-between;
     padding-right: 10px;
     border-top: solid 1px white;
     border-bottom: solid 1px white;
     color: white;
 }
+
+#projSpan strong {
+    font-weight: 700;
+    font-size: 4vw;
+}
+
 
 #projectsSubMenu {
     display: none;
@@ -196,17 +202,12 @@ padding-left: 10px;
     border-bottom: solid 1px white;
 }
 
-#accueilHdrMobile {
-    position: relative;
-    height: 1px;
-    border-right: solid 1px #fff;
-}
 
 a:link, a:visited {
     display: inline-block;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 4vw;
+    font-size: 14px;
     padding-left: 1.5vw;
     padding-right: 1vw;
     text-decoration: none;

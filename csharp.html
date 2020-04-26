@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- if you dont put viewport here iphone and company 
+        wont take into account all the hardwork you did on your css-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+    Portfolio
+    </title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="assets/css/hamburgers.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav id="navWrapperMobile">
+        <button class="hamburger hamburger--3dy" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div id="allProjectsContent">
+            <span id="menuPlaceholder"></span>
+            <a id ="homeLink" href="index.html">Accueil</a>
+            <div id="projectsSMWrapper">
+               <span id="projSpan"><a href="#">Projets</a><strong>+</strong></span>
+                <div id="projectsSubMenu">
+                    <a class = "linkMenuItems" href="csharp.html"><strong>>   </strong><span class="subMenuItems">C#</span></a>
+                    <a class = "linkMenuItems" href="vba.html"><strong>>   </strong><span class="subMenuItems">VBA</span></a>
+                    <a class = "linkMenuItems" href="powershell.html"><strong>>   </strong><span class="subMenuItems">Powershell</span></a>
+                    <a class = "linkMenuItems"href="webdev.html"><strong>>   </strong><span class="subMenuItems">Dévelopement Web</span></a>
+                </div>
+            </div>
+        </div>  
+        </nav>
+
+    <div id="headerDiv">
+        <div id="pageTitle"> Projets </br> <p id="poste">C#</p>
+                   <div id="navWrapperDesktop">
+                    <span id="accueilHeaderDT">
+                        <a  href="index.html">Accueil</a>
+                    </span>
+                    <div id="accueilHeaderDT2">
+                        <p>Projets</p>
+                        <div class="allProjectsContent">
+                            <a href="allProjects.html">Tous</a>
+                            <a href="csharp.html">C#</a>
+                            <a href="vba.html">VBA</a>
+                            <a href="powershell.html">Powershell</a>
+                            <a href="webdev.html">Dévelopement Web</a>
+                        </div>
+                    </div>           
+                 </div>
+                </div>
+         </div>
+         <div id="emailWrapper"><p>jonrsample@gmail.com</p></div>
+    </div>
+
+    <main>
+        <div class="divText">
+            <h2 class="contentH2">Webscraper avec GUI en Xaml Forms</h2>
+            <div id="content1">
+                <p>This is an application that I wrote to try to help me find coupons for groceries.
+                    The webscraping part is done using Selenium's dotnet library. 
+                </p></br>
+                <p> As it stands, I've only scraped 2 coupon websites, but am planning on adding more when I have the time.  </p></br>
+            </div>
+            <h2 class="contentH2">Une application LDAP pour mobile</h2>
+            <div id="content1">
+                <p>My friend asked me to try to make an alternative to Window's Active Directory GUI that could be used on mobile phones.
+                    
+                </p></br>
+                <p> As it stands, I've only scraped 2 coupon websites, but am planning on adding more when I have the time.  </p></br>
+            </div>
+        </div>
+    
+        <div class="footerDiv">
+            <footer>
+                <span>Jonathan Robillard</span> 
+                <span> avril 2020 </span>
+            </footer>
+        </div>
+
+    </main>
+
+
+  </body>
+
+<script src="assets/js/hamburger.js"></script>
+
+</html>
